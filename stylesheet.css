@@ -101,7 +101,7 @@ body {
 
 /*Add Backgground image*/
 .hero {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/SmilingBoy.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('SmilingBoy.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -424,7 +424,7 @@ body {
 
 /* ===== ABOUT PAGE ===== */
 #about-hero{
-background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/livestouched.jpg');
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('livestouched.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -500,7 +500,7 @@ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/
 
 /*Add Backgground image*/
 /*#lives-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/livestouched.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('livestouched.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -587,7 +587,7 @@ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/
 
 /* ===== CONTACT PAGE ===== */
 #contact-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/danielkirsch-old-man-4395870_1920.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('danielkirsch-old-man-4395870_1920.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
