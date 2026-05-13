@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lillian Family Care Foundation — Contact & Donate</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-logo">Lillian Family  <span>Care Foundation</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="lives.html">Lives Touched</a></li>
+    <li><a href="contact.html" class="active">Contact & Donate</a></li>
+  </ul>
+  <a href="#donate" class="nav-donate">Donate Now</a>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+
+<section class="page-hero" id="contact-hero">
+  <div class="page-hero-content">
+    <div class="eyebrow">We'd Love to Hear From You</div>
+    <h1 class="page-hero-title">Contact & Donate</h1>
+    <p class="page-hero-sub">Reach out to us for partnerships, volunteering, or enquiries — and support our mission with a donation.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="section-inner two-col">
+    <!-- Contact Info -->
+    <div>
+      <div class="eyebrow">Get In Touch</div>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="body-text" style="margin-bottom:40px;">Whether you want to volunteer, partner with us, or simply learn more — we are always happy to connect.</p>
+
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-key">Phone</div>
+            <div class="contact-val">07062914777</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-key">Email</div>
+            <div class="contact-val">chatwithmeonnetwork0@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-key">Office</div>
+            <div class="contact-val">No. 15, Behind Gbobi Garage, Fish Pond Area, Ore, Obigbo, Ondo State</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-key">Office Hours</div>
+            <div class="contact-val">Mon – Sat, 8am – 5pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-wrap">
+      <div class="eyebrow">Send a Message</div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input class="form-input" type="text" placeholder="Your full name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="your@email.com"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <select class="form-input">
+            <option value="">Select a subject</option>
+            <option>General Enquiry</option>
+            <option>Volunteer</option>
+            <option>Partnership</option>
+            <option>Media / Press</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-input" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-primary full-width" onclick="handleContact()">Send Message →</button>
+        <div id="contact-success" class="success-msg" style="display:none">✅ Message sent! We'll get back to you within 2 working days.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATION SECTION -->
+<section class="section alt-bg" id="donate">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Support Our Work</div>
+      <h2 class="section-title">Make a Donation</h2>
+      <p class="section-sub">Every contribution — no matter the size — directly funds our programs on the ground. Thank you for your generosity.</p>
+    </div>
+
+    <div class="donate-layout">
+
+      <!-- Bank Details -->
+      <div class="bank-card">
+        <div class="bank-card-header">
+          <span class="bank-icon">🏦</span>
+          <div>
+            <div class="bank-card-title">Bank Transfer</div>
+            <div class="bank-card-sub">Direct bank deposit</div>
+          </div>
+        </div>
+        <div class="bank-details">
+          <div class="bank-row">
+            <div class="bank-key">Bank Name</div>
+            <div class="bank-val">Optimus Bank</div>
+          </div>
+          <div class="bank-row">
+            <div class="bank-key">Account Name</div>
+            <div class="bank-val">WhatsApp Go</div>
+          </div>
+          <div class="bank-row">
+            <div class="bank-key">Account Number</div>
+            <div class="bank-val acct-num" id="acctNum">7062914778</div>
+          </div>
+        </div>
+        <button class="copy-btn" onclick="copyAcct()">📋 Copy Account Number</button>
+        <div id="copy-success" class="copy-success" style="display:none">✅ Copied!</div>
+        <p class="bank-note">Please send your name and email as payment reference so we can acknowledge your gift.</p>
+      </div>
+
+      <!-- What Your Donation Does -->
+      <div class="donation-impact">
+        <h3 class="impact-title">What Your Donation Does</h3>
+        <div class="impact-levels">
+          <div class="impact-level">
+            <div class="impact-amount">₦5,000</div>
+            <div class="impact-desc">Provides school supplies for one child for a full term</div>
+          </div>
+          <div class="impact-level">
+            <div class="impact-amount">₦10,000</div>
+            <div class="impact-desc">Covers medications for a family at our mobile health clinic</div>
+          </div>
+          <div class="impact-level">
+            <div class="impact-amount">₦25,000</div>
+            <div class="impact-desc">Funds one month of vocational training for a young person</div>
+          </div>
+          <div class="impact-level">
+            <div class="impact-amount">₦50,000</div>
+            <div class="impact-desc">Sponsors a child's full term of secondary school education</div>
+          </div>
+          <div class="impact-level">
+            <div class="impact-amount">₦100,000+</div>
+            <div class="impact-desc">Funds a full community health outreach event</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Donation Acknowledgement Form -->
+    <div class="donation-form-wrap">
+      <h3 class="donation-form-title">After Donating? Let Us Know 💚</h3>
+      <p class="donation-form-sub">Fill this form so we can send you an acknowledgement receipt and keep you updated on how your donation is being used.</p>
+      <div class="donation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input class="form-input" type="text" placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="your@email.com"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Amount Donated (₦)</label>
+            <input class="form-input" type="text" placeholder="e.g. 10,000"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date of Transfer</label>
+            <input class="form-input" type="date"/>
+          </div>
+        </div>
+        <button class="btn-primary full-width" onclick="handleDonation()">Submit Confirmation →</button>
+        <div id="donation-success" class="success-msg" style="display:none">✅ Thank you! We'll send your receipt within 24 hours.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Lillian Family Care Foundation <span></span></div>
+      <p class="footer-desc">A registered Nigerian NGO dedicated to empowering communities through education, healthcare, and economic opportunity.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="lives.html">Lives Touched</a></li>
+        <li><a href="contact.html">Contact & Donate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:07062914777">07062914777</a></li>
+        <li><a href="mailto:chatwithmeonnetwork0@gmail.com" target="_blank" rel="noopener noreferrer">chatwithmeonnetwork0@gmail.com</a></li>
+        <li>Lagos, Nigeria</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Lillian Family Care Foundation. All rights reserved.</span>
+    <span>CAC Reg. No: 8031980</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function copyAcct(){
+  navigator.clipboard.writeText('7062914778').then(()=>{
+    document.getElementById('copy-success').style.display='block';
+    setTimeout(()=>{ document.getElementById('copy-success').style.display='none'; }, 2500);
+  });
+}
+function handleContact(){
+  document.getElementById('contact-success').style.display='block';
+}
+function handleDonation(){
+  document.getElementById('donation-success').style.display='block';
+}
+</script>
+</body>
+</html>
